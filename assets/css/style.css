@@ -96,6 +96,20 @@ img{
 .about{
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-about{
+  flex-basis: 32%;
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  border: 1px solid #41B883;
+  transition: .3s;
+}
+.single-about:hover{
+  background-color: #41B883;
+  color: #fff;
 }
 .single-about i{
   font-size: 20px;
@@ -142,4 +156,26 @@ img{
 }
 .single-service a:hover{
   background-color: teal;
+}
+/* Gallery */
+.gallery-area{
+  padding: 100px 0;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-gallery{
+  flex-basis: 32%;
+  margin-bottom: 30px;
+}
+.single-gallery img{
+  border: 3px solid #ddd;
+  padding: 3px;
+  border-radius: 7px;
+  transition: .3s;
+}
+.single-gallery img:hover{
+  transform: scale(1.1);
 }
